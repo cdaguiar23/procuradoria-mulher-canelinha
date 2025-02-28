@@ -1,12 +1,52 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Mission from "@/components/Mission";
+import Services from "@/components/Services";
+import Team from "@/components/Team";
+import News from "@/components/News";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Smooth scroll for anchor links
+  useEffect(() => {
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const link = target.closest('a[href^="#"]');
+      
+      if (link) {
+        e.preventDefault();
+        const targetId = link.getAttribute("href")?.substring(1);
+        if (targetId) {
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        }
+      }
+    };
+
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        <Mission />
+        <Services />
+        <Team />
+        <News />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
