@@ -7,22 +7,22 @@ import { ptBR } from "date-fns/locale";
 const news = [
   {
     id: 1,
-    title: "Audiência Pública sobre Violência Doméstica",
-    excerpt: "A Procuradoria da Mulher realizará audiência pública para discutir políticas de enfrentamento à violência doméstica durante a pandemia.",
+    title: "Audiência Pública sobre Violência Doméstica em Canelinha",
+    excerpt: "A Procuradoria da Mulher realizará audiência pública para discutir políticas de enfrentamento à violência doméstica no município.",
     date: new Date(2023, 5, 15),
     image: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400"
   },
   {
     id: 2,
-    title: "Campanha Agosto Lilás",
-    excerpt: "Lançamento da campanha Agosto Lilás, que visa conscientizar a população sobre a Lei Maria da Penha e seus mecanismos de proteção.",
+    title: "Campanha Agosto Lilás em Canelinha",
+    excerpt: "Câmara Municipal lança campanha Agosto Lilás para conscientizar a população sobre a Lei Maria da Penha e os canais de denúncia no município.",
     date: new Date(2023, 7, 7),
     image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400"
   },
   {
     id: 3,
-    title: "Capacitação para Conselheiros Tutelares",
-    excerpt: "Procuradoria promoverá curso de capacitação para conselheiros tutelares sobre o atendimento a crianças e adolescentes expostos à violência doméstica.",
+    title: "Seminário sobre Políticas Públicas para Mulheres",
+    excerpt: "Procuradoria da Mulher promoverá seminário para discutir a implementação de políticas públicas para mulheres no município de Canelinha.",
     date: new Date(2023, 8, 22),
     image: "https://images.unsplash.com/photo-1528901166007-3784c7dd3653?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400"
   },
@@ -71,7 +71,7 @@ const News = () => {
             Acompanhe Nossas Atividades
           </h2>
           <p className="text-lg text-muted-foreground stagger-item">
-            Fique por dentro das ações, eventos e notícias relacionadas ao trabalho da Procuradoria da Mulher em nossa cidade.
+            Fique por dentro das ações, eventos e notícias relacionadas ao trabalho da Procuradoria da Mulher na Câmara Municipal de Canelinha.
           </p>
         </div>
 

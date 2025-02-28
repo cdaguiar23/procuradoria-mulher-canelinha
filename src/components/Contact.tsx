@@ -49,7 +49,7 @@ const Contact = () => {
               Estamos à Disposição Para Te Atender
             </h2>
             <p className="text-lg text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: "300ms" }}>
-              Se você precisa de ajuda, orientação ou deseja mais informações sobre nossos serviços, entre em contato conosco. Estamos prontos para te acolher e ajudar.
+              Se você precisa de orientação, informações ou deseja conhecer mais sobre o trabalho da Procuradoria da Mulher em Canelinha, entre em contato conosco.
             </p>
 
             <div className="space-y-6 animate-slide-up" style={{ animationDelay: "400ms" }}>
@@ -59,8 +59,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium mb-1">Email</h3>
-                  <a href="mailto:contato@procuradoriamulher.gov.br" className="text-brand-600 hover:text-brand-700 animated-link">
-                    contato@procuradoriamulher.gov.br
+                  <a href="mailto:procuradoria.mulher@camaracanelinha.sc.gov.br" className="text-brand-600 hover:text-brand-700 animated-link">
+                    procuradoria.mulher@camaracanelinha.sc.gov.br
                   </a>
                 </div>
               </div>
@@ -71,8 +71,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium mb-1">Telefone</h3>
-                  <a href="tel:+551199999999" className="text-brand-600 hover:text-brand-700 animated-link">
-                    (11) 9999-9999
+                  <a href="tel:+554832643069" className="text-brand-600 hover:text-brand-700 animated-link">
+                    (48) 3264-3069
                   </a>
                 </div>
               </div>
@@ -84,8 +84,9 @@ const Contact = () => {
                 <div>
                   <h3 className="text-lg font-medium mb-1">Endereço</h3>
                   <p className="text-muted-foreground">
-                    Câmara Municipal, Av. Principal, 123<br />
-                    Centro - CEP: 00000-000
+                    Câmara Municipal de Canelinha<br />
+                    Av. Cantório Florentino da Silva, 1683<br />
+                    Centro - Canelinha/SC - CEP: 88230-000
                   </p>
                 </div>
               </div>
@@ -161,8 +162,8 @@ const Contact = () => {
                     <option value="">Selecione</option>
                     <option value="Denúncia">Denúncia</option>
                     <option value="Dúvida">Dúvida</option>
-                    <option value="Orientação Jurídica">Orientação Jurídica</option>
-                    <option value="Apoio Psicológico">Apoio Psicológico</option>
+                    <option value="Orientação">Orientação</option>
+                    <option value="Sugestão">Sugestão</option>
                     <option value="Outro">Outro</option>
                   </select>
                 </div>

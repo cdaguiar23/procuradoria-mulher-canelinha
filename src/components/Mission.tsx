@@ -38,10 +38,10 @@ const Mission = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="hero-tag stagger-item">Nossa Missão</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 stagger-item">
-            Defendendo os Direitos das Mulheres
+            Defendendo os Direitos das Mulheres em Canelinha
           </h2>
           <p className="text-lg text-muted-foreground stagger-item">
-            A Procuradoria da Mulher é um órgão que possui como objetivo principal a defesa e a promoção da igualdade de gênero, dos direitos das mulheres, e o combate à violência e à discriminação.
+            A Procuradoria da Mulher da Câmara Municipal de Canelinha é um órgão institucional que possui como objetivo principal a defesa e a promoção da igualdade de gênero, dos direitos das mulheres, e o combate à violência e à discriminação em nosso município.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const Mission = () => {
             </div>
             <h3 className="text-xl font-serif font-semibold mb-2">Proteção</h3>
             <p className="text-muted-foreground">
-              Trabalhamos para proteger mulheres contra todas as formas de violência, garantindo acompanhamento jurídico e psicológico.
+              Trabalhamos para proteger as mulheres de Canelinha contra todas as formas de violência, garantindo encaminhamento para atendimento jurídico e psicológico.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ const Mission = () => {
             </div>
             <h3 className="text-xl font-serif font-semibold mb-2">Igualdade</h3>
             <p className="text-muted-foreground">
-              Promovemos ações legislativas que garantam a igualdade de direitos e oportunidades entre homens e mulheres.
+              Promovemos proposições legislativas que garantam a igualdade de direitos e oportunidades entre homens e mulheres em nossa cidade.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ const Mission = () => {
             </div>
             <h3 className="text-xl font-serif font-semibold mb-2">Representatividade</h3>
             <p className="text-muted-foreground">
-              Incentivamos a participação das mulheres nos espaços políticos e de poder, fortalecendo a democracia.
+              Incentivamos a participação das mulheres de Canelinha nos espaços políticos e de poder, fortalecendo a democracia e a cidadania.
             </p>
           </div>
         </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-2">
           <span className="h-8 w-8 rounded-full bg-brand-600"></span>
           <span className="font-serif text-xl font-semibold">
-            Procuradoria da Mulher
+            Procuradoria da Mulher | Canelinha
           </span>
         </a>
 

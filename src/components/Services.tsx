@@ -4,38 +4,38 @@ import { useEffect, useRef } from "react";
 const services = [
   {
     id: 1,
-    title: "Assistência Jurídica",
-    description: "Suporte e orientação jurídica para mulheres vítimas de violência, discriminação ou que precisem de informações sobre seus direitos.",
+    title: "Orientação Jurídica",
+    description: "Encaminhamento e orientação sobre questões jurídicas para mulheres vítimas de violência ou que necessitem de informações sobre seus direitos.",
     icon: "⚖️",
   },
   {
     id: 2,
-    title: "Apoio Psicológico",
-    description: "Atendimento psicológico para mulheres em situação de vulnerabilidade, oferecendo suporte emocional e fortalecimento da autoestima.",
+    title: "Encaminhamento Psicológico",
+    description: "Apoio e encaminhamento para atendimento psicológico às mulheres em situação de vulnerabilidade através da rede municipal.",
     icon: "💭",
   },
   {
     id: 3,
     title: "Proposição Legislativa",
-    description: "Elaboração e acompanhamento de projetos de lei que visam garantir direitos e proteção às mulheres no município.",
+    description: "Elaboração e acompanhamento de projetos de lei que visam garantir direitos e proteção às mulheres no município de Canelinha.",
     icon: "📝",
   },
   {
     id: 4,
     title: "Campanhas Educativas",
-    description: "Desenvolvimento de campanhas de conscientização sobre igualdade de gênero e combate à violência contra a mulher.",
+    description: "Desenvolvimento de campanhas de conscientização sobre igualdade de gênero e combate à violência contra a mulher na comunidade de Canelinha.",
     icon: "📣",
   },
   {
     id: 5,
-    title: "Encaminhamento para Rede de Proteção",
-    description: "Integração com órgãos e instituições da rede de proteção à mulher, facilitando o acesso aos serviços necessários.",
+    title: "Articulação com Rede de Proteção",
+    description: "Integração com órgãos e instituições da rede de proteção à mulher, facilitando o acesso aos serviços públicos necessários.",
     icon: "🔄",
   },
   {
     id: 6,
-    title: "Monitoramento de Políticas Públicas",
-    description: "Acompanhamento da implementação de políticas públicas destinadas às mulheres, garantindo sua efetividade.",
+    title: "Fiscalização de Políticas Públicas",
+    description: "Acompanhamento e fiscalização da implementação de políticas públicas destinadas às mulheres no município de Canelinha.",
     icon: "📊",
   },
 ];
@@ -79,7 +79,7 @@ const Services = () => {
             Como Podemos Ajudar
           </h2>
           <p className="text-lg text-muted-foreground stagger-item">
-            Oferecemos diversos serviços para atender às necessidades das mulheres de nossa comunidade, sempre com profissionalismo, ética e sensibilidade.
+            Oferecemos diversos serviços para atender às necessidades das mulheres de Canelinha, sempre com compromisso público, ética e sensibilidade.
           </p>
         </div>
 

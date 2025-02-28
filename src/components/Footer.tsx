@@ -29,14 +29,14 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-6">
               <span className="h-8 w-8 rounded-full bg-brand-400"></span>
               <span className="font-serif text-xl font-semibold">
-                Procuradoria da Mulher
+                Procuradoria da Mulher de Canelinha
               </span>
             </div>
             <p className="text-brand-200 mb-6 max-w-md">
-              Somos um órgão permanente da Câmara Municipal, dedicado à defesa dos direitos das mulheres, ao combate à discriminação e à promoção da igualdade de gênero.
+              Somos um órgão permanente da Câmara Municipal de Canelinha, dedicado à defesa dos direitos das mulheres, ao combate à discriminação e à promoção da igualdade de gênero em nosso município.
             </p>
             <p className="text-brand-300 text-sm">
-              © 2023 Procuradoria da Mulher. Todos os direitos reservados.
+              © {new Date().getFullYear()} Câmara Municipal de Canelinha. Todos os direitos reservados.
             </p>
           </div>
 
@@ -75,28 +75,28 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Links Úteis</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-brand-200 hover:text-white transition-colors">
+                <a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank" className="text-brand-200 hover:text-white transition-colors">
                   Lei Maria da Penha
                 </a>
               </li>
               <li>
-                <a href="#" className="text-brand-200 hover:text-white transition-colors">
-                  Delegacia da Mulher
+                <a href="https://www.canelinha.sc.gov.br" target="_blank" className="text-brand-200 hover:text-white transition-colors">
+                  Prefeitura de Canelinha
                 </a>
               </li>
               <li>
-                <a href="#" className="text-brand-200 hover:text-white transition-colors">
-                  Disque 180
+                <a href="https://www.gov.br/mdh/pt-br/navegue-por-temas/politicas-para-mulheres" target="_blank" className="text-brand-200 hover:text-white transition-colors">
+                  Secretaria Nacional de Políticas para Mulheres
                 </a>
               </li>
               <li>
-                <a href="#" className="text-brand-200 hover:text-white transition-colors">
-                  Secretaria da Mulher
+                <a href="https://www.sc.gov.br/servicos/assunto/cidadania-e-direitos-da-mulher" target="_blank" className="text-brand-200 hover:text-white transition-colors">
+                  Secretaria Estadual da Mulher SC
                 </a>
               </li>
               <li>
-                <a href="#" className="text-brand-200 hover:text-white transition-colors">
-                  Central de Atendimento
+                <a href="tel:180" className="text-brand-200 hover:text-white transition-colors">
+                  Disque 180 - Central de Atendimento à Mulher
                 </a>
               </li>
             </ul>

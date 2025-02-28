@@ -13,13 +13,13 @@ const Hero = () => {
       <div className="container relative z-10 mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-12 md:grid-cols-2 md:gap-8 items-center">
           <div className="flex flex-col items-start">
-            <span className="hero-tag animate-fade-in">Câmara Municipal</span>
+            <span className="hero-tag animate-fade-in">Câmara Municipal de Canelinha</span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-slide-up" style={{ animationDelay: "200ms" }}>
               Procuradoria
               <span className="gradient-text block"> da Mulher</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: "400ms" }}>
-              Trabalhando para garantir os direitos das mulheres, promover políticas de igualdade e combater todas as formas de violência e discriminação.
+              Trabalhando para garantir os direitos das mulheres de Canelinha, promover políticas de igualdade e combater todas as formas de violência e discriminação.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "600ms" }}>
               <a 

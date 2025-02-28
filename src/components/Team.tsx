@@ -4,31 +4,31 @@ import { useEffect, useRef } from "react";
 const team = [
   {
     id: 1,
-    name: "Dra. Maria Silva",
-    role: "Procuradora",
+    name: "Vereadora Joana Almeida",
+    role: "Procuradora da Mulher",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400",
-    bio: "Advogada com especialização em Direito das Mulheres e experiência de mais de 15 anos na defesa de causas relacionadas à igualdade de gênero."
+    bio: "Vereadora em seu segundo mandato, preside a Procuradoria da Mulher e tem ampla experiência na defesa de causas relacionadas à igualdade de gênero."
   },
   {
     id: 2,
-    name: "Dra. Ana Oliveira",
-    role: "Advogada",
+    name: "Paula Santos",
+    role: "Assessora Jurídica",
     image: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400",
-    bio: "Especialista em Direito Familiar e Penal, com foco em casos de violência doméstica e familiar contra a mulher."
+    bio: "Assessora da Câmara Municipal especializada em direito das mulheres, com foco no acompanhamento de casos de violência doméstica e familiar."
   },
   {
     id: 3,
-    name: "Camila Rodrigues",
-    role: "Psicóloga",
+    name: "Carolina Silva",
+    role: "Assessora Legislativa",
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400",
-    bio: "Psicóloga com mestrado em Psicologia Social, especializada no atendimento a mulheres em situação de vulnerabilidade."
+    bio: "Responsável pelo desenvolvimento de projetos de lei e fiscalização de políticas públicas voltadas para as mulheres em Canelinha."
   },
   {
     id: 4,
-    name: "Patrícia Mendes",
-    role: "Assistente Social",
+    name: "Fernanda Oliveira",
+    role: "Assessora de Comunicação",
     image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400",
-    bio: "Profissional com vasta experiência na articulação de redes de apoio e no desenvolvimento de políticas públicas para mulheres."
+    bio: "Coordena as campanhas educativas e a divulgação das ações da Procuradoria da Mulher junto à comunidade de Canelinha."
   },
 ];
 
@@ -71,7 +71,7 @@ const Team = () => {
             Profissionais Dedicadas
           </h2>
           <p className="text-lg text-muted-foreground stagger-item">
-            Conheça nossa equipe multidisciplinar, composta por profissionais qualificadas e comprometidas com a defesa dos direitos das mulheres.
+            Conheça nossa equipe multidisciplinar, composta por servidoras qualificadas e comprometidas com a defesa dos direitos das mulheres de Canelinha.
           </p>
         </div>
 
