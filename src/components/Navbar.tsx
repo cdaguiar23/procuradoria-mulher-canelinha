@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -6,6 +5,7 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState<string | null>(null);
 
   // Handle scroll effect
   useEffect(() => {
@@ -25,6 +25,12 @@ const Navbar = () => {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
+  // Função para atualizar o link ativo
+  const handleSetActive = (section: string) => {
+    setActiveLink(section);
+    setIsOpen(false); // Fecha o menu no mobile ao clicar
+  };
+
   return (
     <header
       className={cn(
@@ -36,32 +42,40 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <span className="h-8 w-8 rounded-full bg-brand-600"></span>
+          <img
+            src="public/logo.jpg"
+            alt="logo"
+            height={32}
+            width={32}
+            className="h-8 w-8"
+          />
           <span className="font-serif text-xl font-semibold">
-            Procuradoria da Mulher | Canelinha
+            Procuradoria Especial da Mulher | Canelinha - SC
           </span>
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#sobre" className="animated-link text-sm font-medium">
-            Sobre
-          </a>
-          <a href="#servicos" className="animated-link text-sm font-medium">
-            Serviços
-          </a>
-          <a href="#equipe" className="animated-link text-sm font-medium">
-            Equipe
-          </a>
-          <a href="#noticias" className="animated-link text-sm font-medium">
-            Notícias
-          </a>
-          <a
-            href="#contato"
-            className="rounded-full bg-brand-600 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-brand-700"
-          >
-            Contato
-          </a>
+          {[
+            { id: "sobre", label: "Sobre" },
+            { id: "servicos", label: "Serviços" },
+            { id: "equipe", label: "Equipe" },
+            { id: "noticias", label: "Notícias" },
+            { id: "contato", label: "Contato", isButton: true },
+          ].map(({ id, label, isButton }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={() => handleSetActive(id)}
+              className={`text-sm font-medium transition-all ${
+                activeLink === id || isButton
+                  ? "rounded-full bg-brand-600 px-4 py-2 text-white hover:bg-brand-700"
+                  : "animated-link"
+              }`}
+            >
+              {label}
+            </a>
+          ))}
         </nav>
 
         {/* Mobile Toggle */}
@@ -84,41 +98,26 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8 text-lg">
-          <a 
-            href="#sobre" 
-            className="animated-link font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Sobre
-          </a>
-          <a 
-            href="#servicos" 
-            className="animated-link font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Serviços
-          </a>
-          <a 
-            href="#equipe" 
-            className="animated-link font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Equipe
-          </a>
-          <a 
-            href="#noticias" 
-            className="animated-link font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Notícias
-          </a>
-          <a
-            href="#contato"
-            className="rounded-full bg-brand-600 px-5 py-2 font-medium text-white transition-all hover:bg-brand-700"
-            onClick={() => setIsOpen(false)}
-          >
-            Contato
-          </a>
+          {[
+            { id: "sobre", label: "Sobre" },
+            { id: "servicos", label: "Serviços" },
+            { id: "equipe", label: "Equipe" },
+            { id: "noticias", label: "Notícias" },
+            { id: "contato", label: "Contato", isButton: true },
+          ].map(({ id, label, isButton }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={() => handleSetActive(id)}
+              className={`font-medium transition-all ${
+                activeLink === id || isButton
+                  ? "rounded-full bg-brand-600 px-5 py-2 text-white hover:bg-brand-700"
+                  : "animated-link"
+              }`}
+            >
+              {label}
+            </a>
+          ))}
         </div>
       </div>
     </header>

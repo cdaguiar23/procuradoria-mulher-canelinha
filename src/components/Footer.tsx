@@ -27,15 +27,22 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <span className="h-8 w-8 rounded-full bg-brand-400"></span>
+              <span className="h-8 w-8 rounded-full bg-brand-400">
+                <img
+                src="public/logo.jpg"
+                alt="logo"
+                height={8}
+                width={8}
+                className="h-8 w-8"
+              /></span>
               <span className="font-serif text-xl font-semibold">
                 Procuradoria da Mulher de Canelinha
               </span>
             </div>
-            <p className="text-brand-200 mb-6 max-w-md">
+            <p className="text-gray-200 mb-6 max-w-md">
               Somos um órgão permanente da Câmara Municipal de Canelinha, dedicado à defesa dos direitos das mulheres, ao combate à discriminação e à promoção da igualdade de gênero em nosso município.
             </p>
-            <p className="text-brand-300 text-sm">
+            <p className="text-white text-sm">
               © {new Date().getFullYear()} Câmara Municipal de Canelinha. Todos os direitos reservados.
             </p>
           </div>
@@ -107,9 +114,8 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-6 right-6 h-12 w-12 rounded-full bg-brand-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center ${
-          showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
-        }`}
+        className={`fixed bottom-6 right-6 h-12 w-12 rounded-full bg-brand-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center ${showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+          }`}
         aria-label="Voltar ao topo"
       >
         <ArrowUp size={20} />
