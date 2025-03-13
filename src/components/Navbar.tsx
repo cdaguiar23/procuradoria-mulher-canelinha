@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState<string | null>(null);
 
-  // Handle scroll effect
+  // Efeito ao rolar a página
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -16,7 +16,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle escape key to close mobile menu
+  // Fechar menu ao pressionar ESC
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsOpen(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // Função para atualizar o link ativo
+  // Atualizar o link ativo ao clicar
   const handleSetActive = (section: string) => {
     setActiveLink(section);
     setIsOpen(false); // Fecha o menu no mobile ao clicar
@@ -54,31 +54,25 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Navegação Desktop */}
         <nav className="hidden md:flex items-center gap-8">
-          {[
-            { id: "sobre", label: "Sobre" },
-            { id: "servicos", label: "Serviços" },
-            { id: "equipe", label: "Equipe" },
-            { id: "noticias", label: "Notícias" },
-            { id: "contato", label: "Contato", isButton: true },
-          ].map(({ id, label, isButton }) => (
+          {["sobre", "servicos", "equipe", "noticias", "contato"].map((id) => (
             <a
               key={id}
               href={`#${id}`}
               onClick={() => handleSetActive(id)}
               className={`text-sm font-medium transition-all ${
-                activeLink === id || isButton
+                activeLink === id
                   ? "rounded-full bg-brand-600 px-4 py-2 text-white hover:bg-brand-700"
                   : "animated-link"
               }`}
             >
-              {label}
+              {id.charAt(0).toUpperCase() + id.slice(1)}
             </a>
           ))}
         </nav>
 
-        {/* Mobile Toggle */}
+        {/* Botão Mobile */}
         <button
           className="flex md:hidden"
           onClick={() => setIsOpen(!isOpen)}
@@ -88,7 +82,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Navegação Mobile */}
       <div
         className={cn(
           "fixed inset-0 z-40 bg-background/95 backdrop-blur-sm transition-all duration-300 md:hidden",
@@ -98,24 +92,18 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8 text-lg">
-          {[
-            { id: "sobre", label: "Sobre" },
-            { id: "servicos", label: "Serviços" },
-            { id: "equipe", label: "Equipe" },
-            { id: "noticias", label: "Notícias" },
-            { id: "contato", label: "Contato", isButton: true },
-          ].map(({ id, label, isButton }) => (
+          {["sobre", "servicos", "equipe", "noticias", "contato"].map((id) => (
             <a
               key={id}
               href={`#${id}`}
               onClick={() => handleSetActive(id)}
               className={`font-medium transition-all ${
-                activeLink === id || isButton
+                activeLink === id
                   ? "rounded-full bg-brand-600 px-5 py-2 text-white hover:bg-brand-700"
                   : "animated-link"
               }`}
             >
-              {label}
+              {id.charAt(0).toUpperCase() + id.slice(1)}
             </a>
           ))}
         </div>
