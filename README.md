@@ -6,7 +6,7 @@ Este projeto é uma landing page para a Procuradoria Especial da Mulher de Canel
 
 ## URL do Projeto
 
-**URL**: [https://lovable.dev/projects/fc20458d-26ff-463d-8c28-f96d23e69b55](https://lovable.dev/projects/fc20458d-26ff-463d-8c28-f96d23e69b55)
+**URL**: [https://9000-idx-procuradoria-mulher-canelinha-1741629073854.cluster-4xpux6pqdzhrktbhjf2cumyqtg.cloudworkstations.dev/?monospaceUid=514368&embedded=0)
 
 ## Tecnologias Utilizadas
 
@@ -80,4 +80,4 @@ Este projeto está licenciado sob a MIT License.
 
 ---
 
-Feito com ❤️ pela equipe da Procuradoria Especial da Mulher | Canelinha - SC.
+Trabalho desenvolvido pelo setor de informática da Câmara de Vereadores de Canelinha - SC.
