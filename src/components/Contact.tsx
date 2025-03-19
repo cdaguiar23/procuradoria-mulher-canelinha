@@ -72,7 +72,7 @@ const Contact = () => {
                 <div>
                   <h3 className="text-lg font-medium mb-1">Telefone</h3>
                   <a href="tel:+554832643069" className="text-brand-600 hover:text-brand-700 animated-link">
-                    (48) 3264-3069
+                    (48) 3264-0033
                   </a>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                   <h3 className="text-lg font-medium mb-1">Endereço</h3>
                   <p className="text-muted-foreground">
                     Câmara Municipal de Canelinha<br />
-                    Av. Cantório Florentino da Silva, 1683<br />
+                    Rua Manoel Francisco Correa, 417<br />
                     Centro - Canelinha/SC - CEP: 88230-000
                   </p>
                 </div>

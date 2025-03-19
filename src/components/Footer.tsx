@@ -92,13 +92,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.gov.br/mdh/pt-br/navegue-por-temas/politicas-para-mulheres" target="_blank" className="text-brand-200 hover:text-white transition-colors">
-                  Secretaria Nacional de Políticas para Mulheres
+                <a href="https://www.gov.br/mdh/pt-br/navegue-por-temas/politicas-para-mulheres/arquivo/arquivos-diversos/sobre/spm" target="_blank" className="text-brand-200 hover:text-white transition-colors">
+                  Secretaria de Políticas para Mulheres
                 </a>
               </li>
               <li>
-                <a href="https://www.sc.gov.br/servicos/assunto/cidadania-e-direitos-da-mulher" target="_blank" className="text-brand-200 hover:text-white transition-colors">
-                  Secretaria Estadual da Mulher SC
+                <a href="https://www.sas.sc.gov.br/" target="_blank" className="text-brand-200 hover:text-white transition-colors">
+                  Secretaria da Assistência Social, Mulher e Família de Santa Catarina
                 </a>
               </li>
               <li>
