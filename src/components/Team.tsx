@@ -22,15 +22,7 @@ const team = [
     role: "2º Procurador Especial Adjunto",
     image: "/vereador_jackson.jpg",
     bio: "Responsável pelo desenvolvimento de projetos de lei e fiscalização de políticas públicas voltadas para as mulheres em Canelinha."
-  },
-     
-  {
-    id: 4,
-    name: "Chirley",
-    role: "Assessora de Comunicação",
-    //image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400",
-    bio: "Coordena as campanhas educativas e a divulgação das ações da Procuradoria da Mulher junto à comunidade de Canelinha."
-  }, 
+  }
 ];
 
 const Team = () => {
@@ -76,7 +68,7 @@ const Team = () => {
           </p>
         </div>
     
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, index) => (
             <div 
               key={member.id} 
